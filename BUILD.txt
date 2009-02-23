@@ -1,0 +1,14 @@
+	How to build
+	============
+
+Normal development:
+
+    mvn install
+
+Normal development without running tests:
+
+    mvn -Dmaven.test.skip=true install
+
+Release
+
+    mvn clean package assembly:assembly
